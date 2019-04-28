@@ -1,0 +1,48 @@
+<project name="XQStyle" basedir="." default="about">
+  	
+	<property name="lib-dir" value="${basedir}/lib"/>
+
+	<target name="about">
+		<echo>XQStyle ant task</echo>
+	</target>
+	
+   <!--
+	 ===============================================================================================
+	   XQStyle CONFIGURATION START
+	   Added by Abhinav K Mishra
+	   You can pass sorce directory/file and rules config using
+	   command line argument.
+	   For e.g. : run-xqstyle -Dsource=D:\xqueryRepos -Druleset=D:\xqueryRepos\xqstyleruleset.xml
+	 ===============================================================================================
+   -->
+	   <target name="xqstyle-init">
+          <echo>******Cleaning the existing xqstyle-reports******</echo>
+          <delete dir="${basedir}\xqstyle-reports" />
+          <echo>******Creating the required directories for xqstyle-reports******</echo>
+          <mkdir dir="${basedir}\xqstyle-reports" />
+          <touch file="${basedir}\xqstyle-reports\index.html"/>
+		  <!-- Pass the source directory or file as a parameter. e.g. -Dsource=c:\test\xquery -->
+		  <property name="source" value=""/>
+		  <!-- Pass the source directory or file as a parameter. e.g. -Dsource=c:\test\xqstyleruleset.xml. 
+		       If this parameter is empty then built-in ruleset will be used -->
+          <property name="ruleset" value=""/>
+	   </target>
+	         
+	   <target name="run-xqstyle" depends="xqstyle-init">
+          <echo>******Processing xquery analysis******</echo>
+          <java classname="com.xqstyle.report.renderers.XQStyleHtmlRenderer">
+             <arg value="${source}"/>
+             <arg value="${ruleset}"/>
+             <arg value="${basedir}\xqstyle-reports"/>
+             <classpath>
+                   <pathelement location="${basedir}\jar\xqstyle.jar"/>
+                   <pathelement location="${lib-dir}\commons-lang3-3.1.jar"/>
+             </classpath>
+           </java>
+	   </target>
+   <!--
+	 ================================================================================================
+	   XQStyle CONFIGURATION END
+	 ================================================================================================
+   -->
+</project>

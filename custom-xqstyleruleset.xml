@@ -1,0 +1,143 @@
+<xqstyle>
+	<ruleset>
+		<rule name="functionLength" enabled="true">
+			<priority>High Priority</priority>
+			<category>CodeSize Rules</category>
+			<properties>
+				<property type="functionLength">200</property>
+			</properties>
+		</rule>
+		<rule name="useComments" enabled="true">
+			<priority>Low Priority</priority>
+			<category>Basic Rules</category>
+		</rule>
+		<rule name="methodNamespacePrefix" enabled="true">
+			<priority>High Priority</priority>
+			<category>Basic Rules</category>
+		</rule>
+		<rule name="moduleVarNamespacePrefix" enabled="true">
+			<priority>High Priority</priority>
+			<category>Basic Rules</category>
+		</rule>
+        <rule name="avoidLocalNamespacePrefixForMethods" enabled="true">
+			<priority>High Priority</priority>
+			<category>Basic Rules</category>
+		</rule>
+		<rule name="avoidLocalNamespacePrefixForModuleVar" enabled="true">
+			<priority>High Priority</priority>
+			<category>Basic Rules</category>
+		</rule>
+		<rule name="useFunctionReturnType" enabled="true">
+			<priority>High Priority</priority>
+			<category>Basic Rules</category>
+		</rule>
+		<rule name="avoidItemAsReturnType" enabled="true">
+			<priority>Normal Priority</priority>
+			<category>Design Rules</category>
+		</rule>
+		<rule name="useParamsStrongTyping" enabled="true">
+			<priority>Normal Priority</priority>
+			<category>Design Rules</category>
+		</rule>
+		<rule name="unexpectedCommentToken" enabled="true">
+			<priority>High Priority</priority>
+			<category>Compilation Error</category>
+		</rule>
+		<rule name="useXqueryVersion" enabled="true">
+			<priority>High Priority</priority>
+			<category>Basic Rules</category>
+		</rule>
+		<rule name="moduleVariableStrongTyping" enabled="true">
+			<priority>High Priority</priority>
+			<category>Design Rules</category>
+		</rule>
+		<rule name="avoidItemAsTypeForModuleVariable" enabled="true">
+			<priority>Normal Priority</priority>
+			<category>Design Rules</category>
+		</rule>
+		<rule name="declareModuleVariableInUpperCase" enabled="true">
+			<priority>High Priority</priority>
+			<category>Naming Rules</category>
+		</rule>
+		<rule name="avoidDocumentNodeAssignment" enabled="true">
+			<priority>High Priority</priority>
+			<category>Optimization Rules</category>
+		</rule>
+		<rule name="avoidXpathDecendantSteps" enabled="true">
+			<priority>Normal Priority</priority>
+			<category>Optimization Rules</category>
+		</rule>
+		<rule name="avoidFnNotCondition" enabled="true">
+			<priority>Low Priority</priority>
+			<category>Design Rules</category>
+		</rule>
+		<rule name="avoidXpathTextSteps" enabled="true">
+			<priority>Low Priority</priority>
+			<category>Optimization Rules</category>
+		</rule>
+		<rule name="useTypeCastInDivision" enabled="true">
+			<priority>High Priority</priority>
+			<category>Design Rules</category>
+		</rule>
+		<rule name="functionMapping" enabled="true">
+			<priority>Low Priority</priority>
+			<category>Design Rules</category>
+		</rule>
+		<rule name="avoidEmptyTryCatch" enabled="true">
+			<priority>High Priority</priority>
+			<category>Basic Rules</category>
+		</rule>
+		<rule name="xpathSubExpressionsInPredicate" enabled="true">
+			<priority>Normal Priority</priority>
+			<category>Optimization Rules</category>
+		</rule>
+		<rule name="strongTypingInLetExpr" enabled="true">
+			<priority>High Priority</priority>
+			<category>Design Rules</category>
+		</rule>
+		<rule name="avoidItemAsTypeForLet" enabled="true">
+			<priority>Normal Priority</priority>
+			<category>Design Rules</category>
+		</rule>
+		<rule name="letVariableInLowerCase" enabled="true">
+			<priority>High Priority</priority>
+			<category>Naming Rules</category>
+		</rule>
+		<rule name="shortVariable" enabled="true">
+			<priority>High Priority</priority>
+			<category>Naming Rules</category>
+			<properties>
+				<property type="variableLength">3</property>
+			</properties>
+		</rule>
+		<rule name="longVariable" enabled="true">
+			<priority>High Priority</priority>
+			<category>Naming Rules</category>
+			<properties>
+				<property type="variableLength">17</property>
+			</properties>
+		</rule>
+		<rule name="methodNaming" enabled="true">
+			<priority>High Priority</priority>
+			<category>Naming Rules</category>
+		</rule>
+		<rule name="shortMethodName" enabled="true">
+			<priority>High Priority</priority>
+			<category>Naming Rules</category>
+			<properties>
+				<property type="methodLength">3</property>
+			</properties>
+		</rule>
+		<rule name="longMethodName" enabled="true">
+			<priority>High Priority</priority>
+			<category>Naming Rules</category>
+			<properties>
+				<property type="methodLength">17</property>
+			</properties>
+		</rule>
+		<rule name="avoidWildCardInXPath" enabled="true">
+			<priority>Normal Priority</priority>
+			<category>Optimization Rules</category>
+		</rule>
+	</ruleset>
+</xqstyle>
